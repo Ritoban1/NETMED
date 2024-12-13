@@ -2,7 +2,7 @@
 title: "NETMED Tutorial"
 author: "Ritoban Kundu"
 date: "2024-12-13"
-output: html_document
+output: github_document
 
 ---
 
@@ -44,6 +44,7 @@ Install the package directly from GitHub:
 
 ```{r}
 #devtools::install_github("Ritoban1/NETMED")
+rmarkdown::render("README.Rmd")
 ```
 
 ## Data Generation for Network Data
@@ -125,15 +126,13 @@ Y <- as.numeric(
   beta[6] * C + beta[7] * (E_t %*% C) +
   E %*% b_y + rnorm(n, 0, sigma_y)
 )
-Y_m=lm(Y ~ A + E_t%*%A + M + E_t%*%M + C + E_t%*%C)
-    
-M_m=lm(Y ~ A + E_t%*%A + C + E_t%*%C)
+
 ```
 
 ## Estimation using NETMED
 
 
-```{r}
+```{r,eval=FALSE}
 res=NETMED(A=A,M=M,Y=Y,E=E,C=as.matrix(C),C_names=as.vector("C"))
 
 
