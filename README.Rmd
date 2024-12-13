@@ -44,6 +44,7 @@ Install the package directly from GitHub:
 
 ```{r}
 #devtools::install_github("Ritoban1/NETMED")
+library(NETMED)
 ```
 
 ## Data Generation for Network Data
