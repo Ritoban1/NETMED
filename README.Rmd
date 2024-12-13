@@ -44,7 +44,6 @@ Install the package directly from GitHub:
 
 ```{r}
 #devtools::install_github("Ritoban1/NETMED")
-rmarkdown::render("README.Rmd")
 ```
 
 ## Data Generation for Network Data
