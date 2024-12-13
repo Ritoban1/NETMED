@@ -1,0 +1,10 @@
+Package: NETMED
+Type: Package
+Title: Estimation of Mediation and Interference effects under Spatial or Network Interference
+Version: 0.1.0
+Authors@R: c(
+    person("Ritoban", "Kundu", , "kundur@umich.edu", role = c("aut", "cre"))
+  )
+Description: Social network or spatial interference induces spillover effects from neighbors' exposures, and the complexity of statistical analysis increases when mediators are involved with network or spatial interference. To address various technical challenges, we develop a software in R employing a structural graphical modeling approach to investigate both mediation and interference effects within network or spatial data. Our software enables us to capture the multifaceted mechanistic pathways through which neighboring units' exposures and mediators exert direct and indirect influences on an individual's outcome. We extend the exposure mapping paradigm in the context of a random-effects network structural equation models (REN-SEM), establishing its capacity to delineate spillover effects of interest. 
+Encoding: UTF-8
+LazyData: true
